@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge alura</title>
+    <link rel="shortcut icon" href="img/sc-logo-64x64.jpg" sizes="64x64" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="main__encriptacion">
+            <textarea name="texto" class="main__encriptacion__texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
+
+        <div class="main__limitaciones">
+            <p class="main__limitaciones__texto">No se pueden usar mayúsculas ni símbolos especiales.</p>
+        </div>
+
+        <div class="main__botones">
+            <button class="main__botones__encriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <button class="main__botones__desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    </div>
+
+    <div class="operacion">
+        <img src="img/imagen-default.png" alt="" class="operacion__imagen">
+        <div class="operacion__mensaje" id="operacion__mensaje">
+            <h2 class="operacion__mensaje__titulo" id="operacion__mensaje__titulo">Ningún mensaje fue encontrado</h2>
+            <p class="operacion__mensaje__texto" id="operacion__mensaje__texto">Ingresa el texto que desees encriptar o desencriptar</p>
+            <!--<textarea name="operacion__resultado" id="operacion__resultado" cols="30" rows="10" class="operacion__resultado"></textarea>-->
+        </div>
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
