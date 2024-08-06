@@ -25,7 +25,7 @@ function desencriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("operacion__mensaje__titulo");
     let parrafo = document.getElementById("operacion__mensaje__texto");
-    
+
     let textoCifrado = texto
                         .replace(/enter/gi, "e")
                         .replace(/imes/gi, "i")
