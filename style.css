@@ -171,6 +171,44 @@
     top: 15%;
 }
 
+.operacion__botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 100%;
+    left: 33%;
+    top: 100%;
+    gap: 1%;
+}
+
+.operacion__boton__resultado__copiar {
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4%;
+    gap: 8%;
+    width: 35%;
+    background-color: #d8dfe8;
+    border: 1px solid #0a3271;
+    border-radius: 24px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #0a3271;
+    
+}
+
+.operacion__boton__resultado__copiar:hover {
+    transform: scale(1.05);
+}
+
+
 @media (max-width: 1000px) {
     .header {
         padding: 5% 0% 0% 0%;
