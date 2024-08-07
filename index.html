@@ -5,44 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge alura</title>
     <link rel="shortcut icon" href="img/sc-logo-64x64.jpg" sizes="64x64" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+
+    <!-- Encabezado -->
+
     <header class="header">
-        <img src="img/alura-logo.png">
+        <img src="img/alura-logo.png" class="logo">
     </header>
-    <div class="main">
+
+
+    <!-- Main -->
+
+    <section class="main">
+
+
+        <!-- Cuadro de texto -->
+
         <div class="main__encriptacion">
-            <textarea name="texto" class="main__encriptacion__texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea name="texto" class="main__encriptacion__texto" id="main__encriptacion__texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        
 
+        <!-- Limitaciones -->
 
-        <div class="main__limitaciones">
-            <p class="main__limitaciones__texto">No se pueden usar mayúsculas ni símbolos especiales.</p>
-        </div>
-
-        <div class="main__botones">
-            <button class="main__botones__encriptar" type="button" onclick="encriptar()">Encriptar</button>
-            <button class="main__botones__desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
-        </div>
-    </div>
-
-    <div class="operacion">
-        <img src="img/imagen-default.png" alt="" class="operacion__imagen">
-        <div class="operacion__mensaje" id="operacion__mensaje">
-            <h2 class="operacion__mensaje__titulo" id="operacion__mensaje__titulo">Ningún mensaje fue encontrado</h2>
-            <p class="operacion__mensaje__texto" id="operacion__mensaje__texto">Ingresa el texto que desees encriptar o desencriptar</p>
-
-            <div class="oculto">
-                <p class="operacion__resultado"></p>
-                <div class="operacion__botones">
-                    <button class="operacion__boton__resultado__copiar" id="operacion__boton__resultado__copiar">Copiar</button>
-                </div>
+            <div class="main__limitaciones">
+                <img src="img/simbolo-aviso.png" alt="Imagen aviso" class="img-aviso">
+                <p class="main__limitaciones__texto">No se pueden usar mayúsculas ni símbolos especiales.</p>
             </div>
-            <!--<textarea name="operacion__resultado" id="operacion__resultado" cols="30" rows="10" class="operacion__resultado"></textarea>-->
-        </div>
-    </div>
 
+
+        <!-- Botones encriptar/desencriptar -->
+
+            <div class="main__botones">
+                <button type="submit" class="main__botones__encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="submit" class="main__botones__desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+
+    <!-- Operaciones -->
+
+        <section class="operacion">
+
+
+            <!-- Cuadro informacion -->
+
+            <div class="operacion__informacion">
+                <img src="img/imagen-default.png" alt="" class="operacion__informacion__imagen" id="operacion__informacion__imagen">
+                <h2 class="operacion__informacion__titulo" id="operacion__informacion__titulo">Ningún mensaje fue encontrado</h2>
+                <p class="operacion__informacion__texto" id="operacion__informacion__texto">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+
+
+            <!-- Cuadro del resultado -->
+
+            <textarea type="mensaje" class="operacion__resultado" readonly></textarea>
+        
+
+            <!-- Botón copiar resultado -->
+
+            <button type="submit" class="operacion__boton__resultado__copiar" id="operacion__boton__resultado__copiar">Copiar</button>
+
+        </section>
+    </section>
+
+
+    <!-- Pie de página -->
+
+    <footer>
+        <p class="footer__texto">Creado por David Gómez Ramírez, el xx/xx/2024</p>
+    </footer>
 </body>
 
 <script src="app.js"></script>
